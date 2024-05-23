@@ -1,0 +1,15 @@
+/* 
+  Insert on HTML the word inside a <span data-tooltip="Text here">
+  For location add data-tooltip-location="Top, Left, Right or Bottom" (without definition of location it will show on top).
+*/
+
+/* On HTML */
+.tooltip-text {
+	color: var(--fio-sys-secondary-color);
+	font-family: 'Open Sans Regular', sans-serif;
+}
+
+.tooltip-text:hover {
+	color: var(--fio-sys-secondary-color-light);
+	text-decoration: underline;
+}

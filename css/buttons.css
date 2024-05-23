@@ -1,0 +1,62 @@
+/* Buttons */
+
+.button-primary,
+.button-secondary {
+    min-width: 80px;
+}
+
+.button-primary {
+    font-family: var(--fio-sys-button-font-family);
+    display:inline-block;
+    padding: var(--fio-sys-spacing-padding-sm) var(--fio-sys-spacing-padding-md);
+    text-align: center;
+    border-radius: var(--fio-sys-spacing-border-radius-md);
+    background-color: var(--fio-sys-secondary-color-button);
+    color: #ffffff !important;
+    border: 1px solid var(--fio-sys-secondary-color-button);
+    text-decoration: none;
+}
+.button-primary:hover {
+    background-color: var(--fio-sys-secondary-color-light);
+    color: #ffffff;
+    border: 1px solid var(--fio-sys-secondary-color-light);
+    text-decoration: none;
+}
+
+.button-secondary {
+    font-family: var(--fio-sys-button-font-family);
+    display:inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: var(--fio-sys-secondary-color-button2);
+    color: #ffffff !important;
+    border: 1px solid var(--fio-sys-secondary-color-button2);
+    text-decoration: none;
+}
+.button-secondary:hover {
+    background-color: var(--fio-sys-secondary-color-light);
+    color: #ffffff;
+    border: 1px solid var(--fio-sys-secondary-color-light);
+    text-decoration: none;
+}
+
+.button-secondary:focus {
+    text-decoration: none;
+}
+
+
+/* Botões para compartilhamento redes sociais */
+.button-secondary span.redes-sociais svg{
+    fill:#fff;
+}
+
+.button-secondary span.redes-sociais {
+    display: inline-block;
+}
+
+@media (min-width: 768px)  {
+    .button-primary,
+    .button-secondary  {
+        min-width: 120px;
+    }
+}

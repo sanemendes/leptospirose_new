@@ -1,0 +1,137 @@
+/* --------------------------------
+
+Tabela
+
+---------------------------------*/
+
+.table {
+	background-color: var(--fio-background-neutral-color-white);
+}
+
+.table > :not(:first-child) {
+	border-top: none;
+  }
+
+.table-responsive.table-bordered {
+	border: none;
+}
+
+.table-responsive table thead th {
+	border: none;
+	vertical-align: middle;
+}
+
+.table-responsive th {
+	background-color: var(--fio-sys-primary-color);
+	color: var(--fio-background-neutral-color-white);
+	border: 1px solid var(--fio-sys-primary-color-light);
+}
+
+.table-responsive th a {
+	color: var(--fio-background-neutral-color-white);
+}
+
+.table-responsive td,
+.table-responsive tr {
+	border: 1px solid var(--fio-sys-primary-color-light);
+	vertical-align: middle;
+}
+
+.table ul li {
+	margin-bottom: 10px;
+}
+
+/* .table td,
+.table th {
+  vertical-align: middle;
+}
+
+.table thead th {
+  vertical-align: middle;
+} */
+
+@media (max-width: 767px) {
+	.table {
+		font-size: 16px;
+	}
+
+	.table thead th {
+		padding: 0;
+	}
+}
+
+/* --------------------------------
+
+Tabela em mobile (colunas viram linhas, em blocos de informação)
+
+---------------------------------*/
+
+@media only screen and (max-width: 800px) {
+	/* Força a tabela a não se comportar como uma tabela*/
+	.no-more-tables table,
+	.no-more-tables thead,
+	.no-more-tables tbody,
+	.no-more-tables th,
+	.no-more-tables td,
+	.no-more-tables tr {
+		display: block;
+	}
+
+	/* Zebra striping */
+	.no-more-tables tr:nth-of-type(odd) {
+		background: var(--fio-sys-primary-color-extra-light);
+	}
+	.no-more-tables tr {
+		border: 1px solid var(--fio-sys-primary-color);
+		margin-bottom: 20px;
+	}
+
+	/* Esconde o header da tabela (mas não usa display:none; por causa da acessibilidade) */
+	.no-more-tables thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.no-more-tables td {
+		/* Faz a td se comportar como uma "row" */
+		border: none;
+		border-bottom: 1px solid var(--color-light);
+		position: relative;
+		padding-left: 50%;
+		white-space: normal;
+		text-align: left;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.no-more-tables tr:nth-of-type(odd) td {
+		border-bottom: 1px solid var(--fio-background-neutral-color-white);
+	}
+
+	.no-more-tables td:before {
+		/* Faz a td:before se comportar como um header da tabela*/
+		position: absolute;
+		/* Top/left values mimic padding */
+		/* top: 6px; */
+		/* left: 5px; */
+		left: 20px;
+		width: 30%;
+		padding-right: 10px;
+		/* white-space: nowrap; */
+		white-space: normal;
+		text-align: center;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+	}
+
+	/*Pega o atributo passado via data-nome-do-atributo*/
+	.no-more-tables td:before {
+		content: attr(data-title);
+	}
+}

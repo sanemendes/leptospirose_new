@@ -1,0 +1,74 @@
+
+/* -------------------------------- 
+
+MÓDULO 1 - AULA 1 - INFOGRÁFICO 1
+
+-------------------------------- */
+
+.cls-1 {
+  fill: var(--fio-sys-primary-color);
+}
+
+.cls-1, .cls-2 {
+  stroke-width: 0px;
+}
+
+.cls-3 {
+  fill: #eabb7b;
+  stroke: #f1d2a7;
+  stroke-width: 2px;
+}
+
+.cls-4 {
+  fill: none;
+}
+
+.cls-4, .cls-5 {
+  stroke: #eee9dd;
+  stroke-width: 1.5px;
+}
+
+.cls-2, .cls-5 {
+  fill: #934139;
+}
+
+.info-SVG .info-bts {
+    animation: move .75s ease-out infinite alternate;
+    cursor: pointer;
+}
+
+.info-SVG .info-bts circle {
+    transition: fill .4s ease; 
+}
+
+.info-SVG .info-bts:hover {
+    transform: translateY(-5px);
+
+    .cls-1 {
+        fill:var(--fio-sys-tertiary-color);
+    }
+
+    .cls-3 {
+        fill:var(--fio-sys-tertiary-color-light);
+    }
+}
+
+
+
+.info-SVG .info-bts:focus {
+	animation:none;
+	transform: translateY(-5px);
+}
+
+
+@keyframes move {
+    from {
+      transform: translateY(0);
+	  filter: drop-shadow(0 1px 1px rgb(110 48 43 / 0.4));
+    }
+
+    to {
+      transform: translateY(-10px);
+	  filter: drop-shadow(0 10px 4px rgb(110 48 43 / 0.4));
+    }
+  }

@@ -1,0 +1,133 @@
+/* --- LIST --- */
+
+.list {
+    margin-bottom: var(--fio-sys-typography-paragraph-margin-bottom);
+}
+
+.list:last-child {
+	margin-bottom: 0;
+}
+
+/* Unordered list */
+
+.list .list-group .list-group-item {
+	background: transparent;
+	border: none;
+	border-bottom-color: var(--fio-sys-tertiary-color);
+	border-bottom-style: solid;
+	border-bottom-width: var(--fio-sys-spacing-border-width-sm);
+	border-radius: 0;
+	display: block;
+	padding: var(--fio-sys-spacing-padding-md);
+	padding-left: var(--fio-sys-spacing-padding-xl);
+}
+.list .list-group .list-group-item:last-child {
+	border-bottom: none;
+}
+
+.list .list-group .list-group-item::before {
+	color: var(--fio-sys-primary-color);
+	content: 'label_important';
+	font-family: 'Material Symbols Rounded';
+	font-size: calc(var(--fio-sys-typography-paragraph-size) * 1.2);
+	left: 0;
+	line-height: var(--fio-sys-typography-paragraph-sm-height);
+	position: absolute;
+	text-shadow: -4px 4px 0px var(--fio-sys-primary-color-contrast);
+	vertical-align: middle;
+}
+
+.list .list-group .list-group-item[list-style='video']::before {
+	color: var(--fio-sys-primary-color);
+	content: 'movie';
+	font-family: 'Material Symbols Rounded';
+	vertical-align: middle;
+}
+.list .list-group .list-group-item[list-style='audio']::before {
+	color: var(--fio-sys-primary-color);
+	content: 'headphones';
+	font-family: 'Material Symbols Rounded';
+	vertical-align: middle;
+}
+.list .list-group .list-group-item[list-style='file']::before {
+	color: var(--fio-sys-primary-color);
+	content: 'article';
+	font-family: 'Material Symbols Rounded';
+	vertical-align: middle;
+}
+.list .list-group .list-group-item[list-style='page']::before {
+	color: var(--fio-sys-primary-color);
+	content: 'tab';
+	font-family: 'Material Symbols Rounded';
+	vertical-align: middle;
+}
+.list .list-group .list-group-item[list-style='none']::before {
+	content: '';
+	display: none;
+	/* list-style: none; */
+}
+
+/*Quando há lista dentro de lista:*/
+.list .list-group .list-group-item > .list-group .sub-item {
+	border: none;
+	display: list-item;
+	list-style: none;
+	padding: var(--fio-sys-spacing-padding-sm);
+	padding-left: var(--fio-sys-spacing-padding-xl);
+	/* margin-left: 2.2rem; */
+}
+.list .list-group .list-group-item > .list-group .sub-item:first-child {
+	padding-top: 24px;
+}
+.list .list-group .list-group-item > .list-group .sub-item::before {
+	color: var(--fio-sys-primary-color);
+	text-shadow: -4px 4px 0 var(--fio-sys-tertiary-color-extra-dark);
+}
+
+/* Ordered list */
+
+.list .list-group.list-group-numbered {
+	list-style: none;
+	counter-reset: contador-ol;
+}
+.list .list-group.list-group-numbered .list-group-item {
+	padding-left: 30px;
+}
+.list .list-group.list-group-numbered .list-group-item > .list-group {
+	counter-reset: subcontador-ol;
+}
+.list .list-group.list-group-numbered > .list-group-item::before {
+	/* display: list-item; */
+	counter-increment: contador-ol;
+	content: counter(contador-ol);
+}
+.list .list-group.list-group-numbered[number-style='a'] > .list-group-item::before {
+	counter-increment: contador-ol;
+	content: counter(contador-ol, lower-alpha);
+}
+.list .list-group.list-group-numbered[number-style='I'] > .list-group-item::before {
+	counter-increment: contador-ol;
+	content: counter(contador-ol, upper-roman);
+}
+.list .list-group.list-group-numbered .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol) '.' counter(subcontador-ol);
+}
+.list .list-group.list-group-numbered[number-style='a'] .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol, lower-alpha) '.' counter(subcontador-ol, lower-alpha);
+}
+.list .list-group.list-group-numbered[number-style='I'] .list-group-item > .list-group.list-group-numbered > .list-group-item::before {
+	counter-increment: subcontador-ol;
+	content: counter(contador-ol, upper-roman) '.' counter(subcontador-ol, upper-roman);
+}
+
+.list .list-group.list-group-numbered > .list-group-item {
+	padding-left: var(--fio-sys-spacing-padding-xl);
+}
+.list .list-group.list-group-numbered > .list-group-item.sub-item {
+	padding-left: calc(var(--fio-sys-spacing-padding-lg) * 2);
+}
+.list .list-group.list-group-numbered > .list-group-item::before {
+	font-family: var(--fio-ref-typography-family-secondary-bold);
+}

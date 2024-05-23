@@ -1,0 +1,16 @@
+/* MODULO 2 > AULA 1 > TOPICO 2 */
+#infografico1 .svg-item .background .hover-light {
+	opacity: 0;
+	/* transform-origin: center; */
+	transition: 0.2s ease-out;
+	/* transform: scale(0.1); */
+}
+
+#infografico1 .svg-item:hover .background .hover-light {
+	opacity: 0.25;
+	/* transform: scale(1.1); */
+}
+
+#infografico1 .svg-item:focus {
+	outline: none;
+}

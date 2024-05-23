@@ -1,0 +1,155 @@
+/* Google Material Symbols */
+
+@font-face {
+	font-family: 'Material Symbols Rounded';
+	font-style: normal;
+	font-weight: 100 700;
+	font-display: block;
+	src: url('../fonts/material-symbols-rounded.woff2') format('woff2');
+}
+.material-symbols-rounded {
+	font-family: 'Material Symbols Rounded';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga';
+	vertical-align: text-bottom;
+	font-variation-settings: 'FILL' 0, 'GRAD' 0, 'opsz' 48;
+}
+/* Bootstrap Icons */
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+
+@font-face {
+	font-family: bootstrapIcon;
+	src: url(../fonts/bootstrap-icons.woff);
+}
+
+/*Josefin Sans*/
+
+@font-face {
+	font-family: 'Josefin Sans Light';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/JosefinSans-Light.ttf');
+}
+@font-face {
+	font-family: 'Josefin Sans Light Italic';
+	font-style: italic;
+	font-weight: 300;
+	src: url('../fonts/JosefinSans-LightItalic.ttf');
+}
+@font-face {
+	font-family: 'Josefin Sans Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/JosefinSans-Regular.ttf');
+}
+@font-face {
+	font-family: 'Josefin Sans Italic';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/JosefinSans-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Josefin Sans Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/JosefinSans-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Josefin Sans Medium Italic';
+	font-style: italic;
+	font-weight: 500;
+	src: url('../fonts/JosefinSans-MediumItalic.ttf');
+}
+
+@font-face {
+	font-family: 'Josefin Sans SemiBold';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/JosefinSans-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Josefin Sans SemiBold Italic';
+	font-style: italic;
+	font-weight: 600;
+	src: url('../fonts/JosefinSans-SemiBoldItalic.ttf');
+}
+@font-face {
+	font-family: 'Josefin Sans Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/JosefinSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'Josefin Sans Bold Italic';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/JosefinSans-BoldItalic.ttf');
+}
+
+/* Lato */
+
+@font-face {
+	font-family: 'Lato Light';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Lato-Light.ttf');
+}
+@font-face {
+	font-family: 'Lato Light Italic';
+	font-style: italic;
+	font-weight: 300;
+	src: url('../fonts/Lato-LightItalic.ttf');
+}
+@font-face {
+	font-family: 'Lato Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+	font-family: 'Lato Italic';
+	font-style: italic;
+	font-weight: 400;
+	src: url('../fonts/Lato-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Lato Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+	font-family: 'Lato Bold talic';
+	font-style: italic;
+	font-weight: 700;
+	src: url('../fonts/Lato-BoldItalic.ttf');
+}
+@font-face {
+	font-family: 'Lato Black';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/Lato-Black.ttf');
+}
+@font-face {
+	font-family: 'Lato Black Italic';
+	font-style: italic;
+	font-weight: 900;
+	src: url('../fonts/Lato-BlackItalic.ttf');
+}

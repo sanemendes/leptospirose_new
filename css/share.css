@@ -1,0 +1,21 @@
+/* Compartilhamento */
+@import '-reference.css';
+@import '-system.css';
+
+body {
+    background-color: var(--fio-sys-neutral-color-extra-light);
+  }
+
+#header-share {
+    background:var(--fio-sys-primary-color);
+    height:60px;
+}
+
+#header-share .logo img {
+    display: block;
+    max-height: 50px;
+}
+
+figure img {
+    border-radius: var(--fio-sys-spacing-border-radius-xl);
+}

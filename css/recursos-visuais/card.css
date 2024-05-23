@@ -1,0 +1,74 @@
+/* --- CARD --- */
+
+.card {
+	background-color: var(--fio-component-card-background);
+	border-width: var(--fio-component-card-border-width);
+	border-radius: var(--fio-component-card-border-radius);
+	box-shadow: var(--fio-sys-elevation-lg);
+	transition: ease-out;
+	transition-duration: 0.5s;
+}
+
+.card .box-title > span {
+	border-bottom: 1px solid var(--fio-sys-tertiary-color);
+}
+
+.card.card-primary {
+	background-color: var(--fio-component-card-background-primary);
+	border-color: var(--fio-component-card-border-color-primary);
+}
+
+.card .card-thumb {
+	padding: var(--fio-component-card-thumb-padding);
+	margin: 0;
+	border-radius: var(--fio-component-card-thumb-border-radius);
+}
+.card .card-thumb img {
+	height: auto;
+	max-width: 100%;
+}
+.card > div:first-of-type,
+.card > .card-thumb:first-of-type img {
+	border-top-left-radius: var(--fio-component-card-border-radius);
+	border-top-right-radius: var(--fio-component-card-border-radius);
+}
+.card > div:last-of-type,
+.card > .card-thumb:last-of-type img {
+	border-bottom-left-radius: var(--fio-component-card-border-radius);
+	border-bottom-right-radius: var(--fio-component-card-border-radius);
+}
+.card .card-header {
+	background-color: var(--fio-component-card-header-background);
+	color: var(--fio-sys-text-extra-color);
+	font-family: var(--fio-sys-typography-head-family);
+	font-size: var(--fio-sys-typography-head-xs-size);
+	font-weight: var(--fio-sys-typography-head-weight);
+	letter-spacing: var(--fio-sys-typography-head-tracking);
+	line-height: var(--fio-sys-typography-head-xs-line-height);
+	margin: 0;
+	padding: var(--fio-component-card-header-padding-y) var(--fio-component-card-header-padding-x);
+}
+/* .card .card-body,
+.card .card-footer {
+	background-color: var(--fio-component-card-background);
+} */
+.card .card-body {
+	padding: var(--fio-component-card-body-padding-y) var(--fio-component-card-body-padding-x);
+}
+.card .card-body :last-child {
+	margin-bottom: 0;
+}
+.card .card-footer {
+	text-align: right;
+	border-bottom-left-radius: var(--fio-component-card-border-radius);
+	border-bottom-right-radius: var(--fio-component-card-border-radius);
+	padding: var(--fio-component-card-footer-padding-y) var(--fio-component-card-footer-padding-x);
+	background-color: var(--fio-sys-color-neutral-white);
+}
+
+/* Compare cards */
+
+.compare-symbol span.material-symbols-rounded {
+	font-size: 4rem;
+	font-weight: 600;
+}

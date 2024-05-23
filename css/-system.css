@@ -1,0 +1,277 @@
+/* SYSTEM UI VARIABLES */
+
+@import '-reference.css';
+
+:root {
+	/* Colors */
+	--fio-sys-primary-color: var(--fio-ref-color-primary-40);
+	--fio-sys-primary-color-extra-light: var(--fio-ref-color-primary-90);
+	--fio-sys-primary-color-light: var(--fio-ref-color-primary-60);
+	--fio-sys-primary-color-dark:  var(--fio-ref-color-primary-30);
+	--fio-sys-primary-color-extra-dark: var(--fio-ref-color-primary-20);
+	--fio-sys-text-extra-color: var(--fio-ref-color-extra-15);
+
+	--fio-sys-secondary-color: var(--fio-ref-color-secondary-30);
+	--fio-sys-secondary-color-extra-light: var(--fio-ref-color-secondary-95);
+	--fio-sys-secondary-color-light: var(--fio-ref-color-secondary-50);
+	--fio-sys-secondary-color-dark: var(--fio-ref-color-secondary-20);
+	--fio-sys-secondary-color-extra-dark: var(--fio-ref-color-secondary-10);
+	--fio-sys-secondary-color-button: var(--fio-ref-color-secondary-71);
+	--fio-sys-secondary-color-button2: var(--fio-ref-color-secondary-button-41);
+
+	--fio-sys-tertiary-color: var(--fio-ref-color-tertiary-60);
+	--fio-sys-tertiary-color-extra-light: var(--fio-ref-color-tertiary-95);
+	--fio-sys-tertiary-color-light: var(--fio-ref-color-tertiary-80);
+	--fio-sys-tertiary-color-dark: var(--fio-ref-color-tertiary-40);
+	--fio-sys-tertiary-color-extra-dark: var(--fio-ref-color-tertiary-20);
+
+	--fio-sys-neutral-color: var(--fio-ref-color-neutral-60);
+	--fio-sys-neutral-color-extra-light: var(--fio-ref-color-neutral-95);
+	--fio-sys-neutral-color-light: var(--fio-ref-color-neutral-80);
+	--fio-sys-neutral-color-dark: var(--fio-ref-color-neutral-40);
+	--fio-sys-neutral-color-extra-dark: var(--fio-ref-color-neutral-20);
+
+
+	--fio-sys-text-color: var(--fio-ref-color-neutral-10);
+	--fio-sys-text-color-light: #535658;
+	--fio-sys-text-color-white: var(--fio-ref-color-neutral-100);
+
+	--fio-background-neutral-color: #EEE9DD;
+	--fio-background-neutral-color-white:#fff;
+
+	--color-dark: #1e1e1e;
+	--color-light: #eef2f6;
+	--color-light-hover: #e6e6e625;
+
+	/* Warning */
+	--fio-sys-warning-color-light: var(--fio-ref-color-warning-50);
+	--fio-sys-warning-color-extra-light: var(--fio-ref-color-warning-80);
+	--fio-sys-warning-color-medium: var(--fio-ref-color-warning-40);
+	--fio-sys-warning-color-dark: var(--fio-ref-color-warning-20);
+	--fio-sys-warning-color-extra-dark:  var(--fio-ref-color-warning-10);
+
+
+	/* Attention */
+	--fio-sys-attention-color-light: var(--fio-ref-color-attention-50);
+	--fio-sys-attention-color-extra-light: var(--fio-ref-color-attention-80);
+	--fio-sys-attention-color-medium: var(--fio-ref-color-attention-40);
+	--fio-sys-attention-color-dark: var(--fio-ref-color-attention-20);
+	--fio-sys-attention-olor-extra-dark:  var(--fio-ref-color-attention-10);
+
+	/* Error */
+	--fio-sys-error-color-light: var(--fio-ref-color-error-60);
+	--fio-sys-error-color-extra-light: var(--fio-ref-color-error-95);
+	--fio-sys-error-color-medium: var(--fio-ref-color-error-50);
+	--fio-sys-error-color-dark: var(--fio-ref-color-error-30);
+	--fio-sys-error-color-extra-dark: var(--fio-ref-color-error-20);
+
+	/* --- SPACING --- */
+
+	/* Vertical space */
+	--fio-sys-spacing-vertical-0: var(--fio-ref-size-0);
+	--fio-sys-spacing-vertical-sm: var(--fio-ref-size-075);
+	--fio-sys-spacing-vertical-md: var(--fio-ref-size-150);
+	--fio-sys-spacing-vertical-lg: var(--fio-ref-size-300);
+	--fio-sys-spacing-vertical-xl: var(--fio-ref-size-600);
+
+	/* Padding */
+	--fio-sys-spacing-padding-0: var(--fio-ref-size-0);
+	--fio-sys-spacing-padding-xs: var(--fio-ref-size-padding-050);
+	--fio-sys-spacing-padding-sm: var(--fio-ref-size-padding-100);
+	--fio-sys-spacing-padding-md: var(--fio-ref-size-padding-150);
+	--fio-sys-spacing-padding-lg: var(--fio-ref-size-padding-200);
+	--fio-sys-spacing-padding-xl: var(--fio-ref-size-padding-250);
+
+	/* Margin */
+	--fio-sys-spacing-margin-0: var(--fio-ref-size-margin-0);
+	--fio-sys-spacing-margin-sm: var(--fio-ref-size-margin-075);
+	--fio-sys-spacing-margin-md: var(--fio-ref-size-margin-125);
+	--fio-sys-spacing-margin-lg: var(--fio-ref-size-margin-175);
+	--fio-sys-spacing-margin-xl: var(--fio-ref-size-margin-250);
+
+	/* Border radius */
+	--fio-sys-spacing-border-radius-0: var(--fio-ref-size-radius-none);
+	--fio-sys-spacing-border-radius-sm: var(--fio-ref-size-radius-025);
+	--fio-sys-spacing-border-radius-md: var(--fio-ref-size-radius-050);
+	--fio-sys-spacing-border-radius-lg: var(--fio-ref-size-radius-075);
+	--fio-sys-spacing-border-radius-xl: var(--fio-ref-size-radius-100);
+	--fio-sys-spacing-border-radius-full: var(--fio-ref-size-radius-full);
+
+	/* Border width */
+	--fio-sys-spacing-border-width-0: var(--fio-ref-size-0);
+	--fio-sys-spacing-border-width-sm: var(--fio-ref-size-border-1);
+	--fio-sys-spacing-border-width-md: var(--fio-ref-size-border-2);
+	--fio-sys-spacing-border-width-lg: var(--fio-ref-size-border-4);
+	--fio-sys-spacing-border-width-xl: var(--fio-ref-size-border-6);
+
+	/* ---OPACITY --- */
+
+	--fio-sys-opacity-0: var(--fio-ref-size-opacity-0);
+	--fio-sys-opacity-25: var(--fio-ref-size-opacity-25);
+	--fio-sys-opacity-50: var(--fio-ref-size-opacity-50);
+	--fio-sys-opacity-75: var(--fio-ref-size-opacity-75);
+	--fio-sys-opacity-100: var(--fio-ref-size-opacity-100);
+
+	/* --- ELEVATION (shadow) --- */
+
+	/* --fio-sys-elevation-color: hsl(var(--fio-sys-color-neutral-medium) / 50%); */
+	--fio-sys-elevation-color: hsla(var(--fio-ref-color-neutral), 30%, 40%);
+
+	--fio-sys-elevation-0: 0;
+	--fio-sys-elevation-sm: 0 calc(var(--fio-ref-size-shadow-base) * 0.125) calc(var(--fio-ref-size-shadow-base) * 0.25) var(--fio-sys-elevation-color);
+	--fio-sys-elevation-md: 0 calc(var(--fio-ref-size-shadow-base) * 0.25) calc(var(--fio-ref-size-shadow-base) * 0.5) var(--fio-sys-elevation-color);
+	--fio-sys-elevation-lg: 0 calc(var(--fio-ref-size-shadow-base) * 0.5) calc(var(--fio-ref-size-shadow-base) * 1) var(--fio-sys-elevation-color);
+	--fio-sys-elevation-xl: 0 calc(var(--fio-ref-size-shadow-base) * 1) calc(var(--fio-ref-size-shadow-base) * 2) var(--fio-sys-elevation-color);
+
+	/* --- TYPOGRAPHY --- */
+
+	/* Base Size */
+	--fio-sys-size-base: var(--fio-ref-size-base);
+
+	/* Heads */
+	--fio-sys-typography-head-color: var(--fio-sys-primary-color);
+	--fio-sys-typography-head-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-head-margin-bottom: var(--fio-sys-spacing-vertical-sm);
+	--fio-sys-typography-head-tracking: 0;
+	--fio-sys-typography-head-weight: var(--fio-ref-typography-weight-bold);
+
+	/* H1 */
+	--fio-sys-typography-head-xxl-size: var(--fio-ref-typography-size-350);
+	--fio-sys-typography-head-xxl-line-height: var(--fio-ref-typography-height-lg);
+
+	/* H2 */
+	--fio-sys-typography-head-xl-size: var(--fio-ref-typography-size-300);
+	--fio-sys-typography-head-xl-line-height: var(--fio-ref-typography-height-lg);
+
+	/* H3 */
+	--fio-sys-typography-head-lg-size: var(--fio-ref-typography-size-250);
+	--fio-sys-typography-head-lg-line-height: var(--fio-ref-typography-height-md);
+
+	/* H4 */
+	--fio-sys-typography-head-md-size: var(--fio-ref-typography-size-200);
+	--fio-sys-typography-head-md-line-height: var(--fio-ref-typography-height-md);
+
+	/* H5 */
+	--fio-sys-typography-head-sm-size: var(--fio-ref-typography-size-150);
+	--fio-sys-typography-head-sm-line-height: var(--fio-ref-typography-height-sm);
+
+	/* H6 */
+	--fio-sys-typography-head-xs-size: var(--fio-ref-typography-size-125);
+	--fio-sys-typography-head-xs-line-height: var(--fio-ref-typography-height-sm);
+
+	/* Paragraph */
+	--fio-sys-typography-paragraph-family: var(--fio-ref-typography-family-secondary-regular);
+	--fio-sys-typography-paragraph-tracking: var(--fio-ref-typography-spacing-normal);
+	--fio-sys-typography-paragraph-weight: var(--fio-ref-typography-weight-normal);
+	--fio-sys-typography-paragraph-margin-bottom: var(--fio-sys-spacing-vertical-md);
+	--fio-sys-typography-paragraph-size: var(--fio-ref-typography-size-100);
+	--fio-sys-typography-paragraph-height: var(--fio-ref-typography-height-lg);
+
+	--fio-sys-typography-paragraph-color: var(--fio-sys-color-text-dark);
+	--fio-sys-typography-paragraph-color-light: var(--fio-sys-color-text-light);
+
+	--fio-sys-typography-paragraph-sm-size: var(--fio-ref-typography-size-075);
+	--fio-sys-typography-paragraph-sm-height: var(--fio-ref-typography-height-md);
+
+	/* Link */
+	--fio-sys-typography-link-color: var(--fio-sys-color-accent-medium);
+	--fio-sys-typography-link-color-contrast: var(--fio-sys-color-accent-medium-contrast);
+	--fio-sys-typography-link-color-contrast--hover: var(--fio-sys-color-accent-dark-contrast);
+	--fio-sys-typography-link-color--focus: var(--fio-sys-color-neutral-black);
+	--fio-sys-typography-link-color--hover: var(--fio-sys-color-accent-dark);
+	--fio-sys-typography-link-family: var(--fio-ref-typography-family-secondary-regular);
+	--fio-sys-typography-link-weight: var(--fio-ref-typography-weight-normal);
+
+	/* Strong */
+	--fio-sys-typography-strong-family: var(--fio-ref-typography-family-secondary-bold);
+
+	/* Label */
+	--fio-sys-typography-label-family: var(--fio-ref-typography-family-primary-semibold);
+	--fio-sys-typography-label-tracking: var(--fio-ref-typography-spacing-wide);
+	--fio-sys-typography-label-transform: uppercase;
+	--fio-sys-typography-label-weight: var(--fio-ref-typography-weight-light);
+
+	--fio-sys-typography-label-lg-line-height: var(--fio-ref-typography-height-lg);
+	--fio-sys-typography-label-lg-size: var(--fio-ref-typography-size-200);
+
+	--fio-sys-typography-label-md-line-height: var(--fio-ref-typography-height-md);
+	--fio-sys-typography-label-md-size: var(--fio-ref-typography-size-150);
+
+	--fio-sys-typography-label-sm-line-height: var(--fio-ref-typography-height-sm);
+	--fio-sys-typography-label-sm-size: var(--fio-ref-typography-size-100);
+
+	/* Quotation */
+	--fio-sys-typography-quotation-family: var(--fio-ref-typography-family-secondary-italic);
+	--fio-sys-typography-quotation-line-height: var(--fio-ref-typography-height-md);
+	--fio-sys-typography-quotation-size: var(--fio-ref-typography-size-125);
+	--fio-sys-typography-quotation-tracking: 0;
+	--fio-sys-typography-quotation-weight: var(--fio-ref-typography-weight-normal);
+	--fio-sys-typography-quotation-style: var(--fio-ref-typography-style-italic);
+
+	/* Olho de Texto (Highlight) */
+	--fio-sys-typography-highlight-family: var(--fio-ref-typography-family-primary-bold);
+	--fio-sys-typography-highlight-line-height: var(--fio-ref-typography-height-md);
+
+
+	/* ELEMENTS */
+
+	/* Button */
+
+	--fio-sys-button-radius: var(--fio-ref-shape-radius-100);
+	--fio-sys-button-border: var(--fio-ref-shape-border-2);
+
+	--fio-sys-button-padding-y: var(--fio-sys-spacing-padding-xs);
+	--fio-sys-button-padding-x: var(--fio-sys-spacing-padding-md);
+	--fio-sys-button-gap: var(--fio-ref-size-050);
+
+	--fio-sys-button-sm-padding-y: var(--fio-ref-size-050);
+	--fio-sys-button-sm-padding-x: var(--fio-ref-size-100);
+	--fio-sys-button-sm-gap: var(--fio-ref-size-050);
+
+	--fio-sys-button-lg-padding-y: var(--fio-ref-size-050);
+	--fio-sys-button-lg-padding-x: var(--fio-ref-size-100);
+	--fio-sys-button-lg-gap: var(--fio-ref-size-050);
+
+	--fio-sys-button-font-family: var(--fio-ref-typography-family-primary-semibold);
+	--fio-sys-button-font-size: var(--fio-ref-typography-size-100);
+	--fio-sys-button-sm-font-size: var(--fio-ref-typography-size-125);
+	--fio-sys-button-lg-font-size: var(--fio-ref-typography-size-150);
+
+	/* Hr line */
+
+	--fio-sys-hr-color: var(--fio-sys-color-neutral-light);
+	--fio-sys-hr-color-contrast: var(--fio-sys-color-neutral-dark);
+
+	--fio-sys-hr-color-primary: var(--fio-sys-color-primary-light);
+	--fio-sys-hr-color-primary-contrast: var(--fio-sys-color-primary-dark);
+
+	--fio-sys-hr-border-width-normal: var(--fio-ref-shape-border-1);
+	--fio-sys-hr-border-width-bold: var(--fio-ref-shape-border-2);
+
+	/* Card */
+
+	--fio-sys-card-background:var(--fio-ref-color-neutral-99);
+	--fio-sys-card-radius-0: var(--fio-ref-shape-radius-0);
+	--fio-sys-card-radius-sm: var(--fio-ref-shape-radius-sm);
+	--fio-sys-card-radius-md: var(--fio-ref-shape-radius-md);
+	--fio-sys-card-radius-lg: var(--fio-ref-shape-radius-lg);
+
+	--fio-sys-card-border-0: var(--fio-ref-shape-border-0);
+	--fio-sys-card-border-sm: var(--fio-ref-shape-border-1);
+	--fio-sys-card-border-md: var(--fio-ref-shape-border-2);
+	--fio-sys-card-border-lg: var(--fio-ref-shape-border-4);
+
+	--fio-sys-card-elevation-0: var(--fio-ref-shape-elevation-0);
+	--fio-sys-card-elevation-sm: var(--fio-ref-shape-elevation-sm);
+	--fio-sys-card-elevation-md: var(--fio-ref-shape-elevation-md);
+	--fio-sys-card-elevation-lg: var(--fio-ref-shape-elevation-lg);
+	--fio-sys-card-elevation-xl: var(--fio-ref-shape-elevation-xl);
+
+
+	/* Text Shadows */
+
+	--fio-sys-text-shadow-header: 0 calc(var(--fio-ref-size-base) * 0.25) calc(var(--fio-ref-size-shadow-base) * 0.75) rgba(0, 0, 0, 1);
+
+	/* Timeline */
+	--fio-sys-header-timeline-vertical: var(--fio-ref-typography-family-primary-regular);
+}

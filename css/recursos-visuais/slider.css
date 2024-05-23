@@ -1,0 +1,135 @@
+/* --- SLIDER --- */
+
+.slider {
+    margin-top: 24px;
+}
+
+.slider .carousel-indicators button {
+    border-radius: 0;
+}
+
+.slider .carousel-inner {
+    border-radius: var(--fio-component-card-border-radius);
+}
+
+.slider .card-body .carousel-item, 
+.slider .carousel-item .card-body {
+    padding-bottom: calc(var(--fio-ref-size-padding-base) * 4);
+}
+
+/* CONTROL BUTTONS */
+.slider .carousel .carousel-control-next, 
+.slider .carousel .carousel-control-prev {
+    position: absolute;
+    top:-24px;
+    right:0;
+    bottom:0;
+    left:auto;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    background-color: var(--fio-sys-secondary-color);
+    border: 0;
+    border-radius: var(--fio-sys-spacing-border-radius-full);
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+.slider .card-body .carousel .carousel-control-next, 
+.slider .card-body .carousel .carousel-control-prev {
+    top:-52px;
+    right:-28px;
+}
+
+.slider .carousel-indicators [data-bs-target] {
+    background-color: var(--fio-sys-secondary-color);
+}
+
+.slider .carousel-indicators .active  {
+    background-color: var(--fio-sys-tertiary-color);
+}
+
+
+.slider .carousel button.carousel-control-prev {
+    right: 64px;
+}
+
+.slider .card-body .carousel button.carousel-control-prev {
+    right: 36px;
+}
+
+
+.slider .carousel-control-next-icon, 
+.slider .carousel-control-prev-icon {
+    border-radius: var(--fio-sys-spacing-border-radius-full);
+}
+
+/*Seta branca*/
+.slider .carousel-control-next-icon.white-arrow {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23FFF' d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/%3E%3C/svg%3E") !important;
+    /* background-color: var(--fio-sys-primary-color); */
+    background-size:30px;
+}
+
+.slider .carousel-control-prev-icon.white-arrow {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23FFF' d='M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z'/%3E%3C/svg%3E") !important;
+    /* background-color: var(--fio-sys-primary-color); */
+    background-size:30px;
+}
+
+/*Seta escura*/
+.slider .carousel-control-next-icon.dark-arrow {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%230a151f' d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/%3E%3C/svg%3E") !important;
+	background-color: var(--fio-sys-primary-color);
+    background-size:30px;
+}
+
+.slider .carousel-control-prev-icon.dark-arrow {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%230a151f' d='M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z'/%3E%3C/svg%3E") !important;
+	background-color: var(--fio-sys-primary-color);
+    background-size:30px;
+}
+
+@media (min-width:768px) {
+    .slider .card-body {
+        padding:0;
+    }
+    
+    .slider .card-body .carousel-item,
+    .slider .carousel-item .card-body {
+        padding: calc(var(--fio-ref-size-padding-base) * 2) 88px calc(var(--fio-ref-size-padding-base) * 4);
+    }
+
+    .slider .card-header {
+        padding: var(--fio-component-card-header-padding-y) calc(var(--fio-ref-size-padding-base) * 6);
+    }
+
+    /* CONTROL BUTTONS */
+    .slider .carousel .carousel-control-next, 
+    .slider .carousel .carousel-control-prev {
+        top: calc(50% - 24px);
+        right:20px;
+        padding: 0;
+    }
+
+    .slider .carousel button.carousel-control-prev {
+        right: auto;
+        left: 20px;
+    }
+    
+    .slider .card-body .carousel .carousel-control-next, 
+    .slider .card-body .carousel .carousel-control-prev {
+        top: calc(50% - 24px);
+        right:20px;
+    }
+
+    .slider .card-body .carousel button.carousel-control-prev {
+        left:20px;
+    }
+}
